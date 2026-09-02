@@ -19,39 +19,234 @@
         body {
             background-color: rgb(0, 0, 33);
             color: white;
+            font-family: "Poppins", sans-serif;
+        }
 
-            .poppins-regular {
-                font-family: "Poppins", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-            }
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-            .poppins-bold {
-                font-family: "Poppins", sans-serif;
-                font-weight: 700;
-                font-style: normal;
-            }
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
 
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(22, 22, 159);
+        }
+
+        nav ul {
+            display: flex;
+
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        /* Technical Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(170, 107, 228, 0.4);
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: rgb(170, 107, 228);
+            box-shadow: 0 10px 30px rgba(170, 107, 228, 0.25);
+        }
+
+        .skill-card h2 {
+            color: rgb(170, 107, 228);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
         }
     </style>
 </head>
 
 <body>
-
     <header>
         <nav>
             <div class="left">Ram's Portfolio</div>
             <div class="right"></div>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Services</li>
-                <li>Contact ME</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact ME</a></li>
             </ul>
-
-
         </nav>
     </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Ram</span>
+                <div> and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="Ram.png.png" alt="" style="border-radius: 60%">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">For technologies, tools, programming languages, etc.</span>
+            <h1>Technical Skills</h1>
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h2>Programming</h2>
+                    <div class="skill-list">
+                        <span class="skill">C</span>
+                        <span class="skill">C++</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h2>Web Development</h2>
+                    <div class="skill-list">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h2>Database</h2>
+                    <div class="skill-list">
+                        <span class="skill">MySQL</span>
+                        <span class="skill">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h2>Tools</h2>
+                    <div class="skill-list">
+                        <span class="skill">Git</span>
+                        <span class="skill">GitHub</span>
+                        <span class="skill">VS Code</span>
+                        <span class="skill">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h2>Core CS</h2>
+                    <div class="skill-list">
+                        <span class="skill">DSA</span>
+                        <span class="skill">DBMS</span>
+                        <span class="skill">Operating System</span>
+                        <span class="skill">Computer Networks</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h2>Other Skills</h2>
+                    <div class="skill-list">
+                        <span class="skill">REST API</span>
+                        <span class="skill">Problem Solving</span>
+                        <span class="skill">OOPs</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Web Developer.", "Web Designer.", "Data Analyst."],
+            typeSpeed: 40,
+        });
+    </script>
+
+</body>
 
 </html>

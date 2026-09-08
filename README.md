@@ -14,7 +14,6 @@ Data Structures & Algorithms, and Software Development.
 
 ### Programming
 - C
-- C++
 - Java
 - Python
 
@@ -56,8 +55,7 @@ real-world applications.
 ## 📫 Contact
 
 - GitHub: https://github.com/ramdixit392-alt
-- LinkedIn: Add your LinkedIn profile here
-
+- LinkedIn: https://www.linkedin.com/in/ram-dixit-5982302a8/
 ---
 
 ⭐ Thank you for visiting my portfolio repository!
